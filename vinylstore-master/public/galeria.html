@@ -1,0 +1,115 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>NO FUN RECORDS</title>
+	<meta name="title" content="jQuery Flipping Gallery by Pete R. | The Pete Design" />
+	<meta name="description" content="Create a Flipping Awesome 3D Gallery with One Function Call" />
+	<link rel="image_src" href="/images/flipping_gallery_image.png" />
+
+	<meta content="http://www.thepetedesign.com/demos/flipping_gallery_demo.html" property="og:url" />
+	<meta content="http://www.thepetedesign.com/images/flipping_gallery_image.png" property="og:image" />
+	<link rel="shortcut icon" id="favicon" href="favicon.png"> 
+	<meta name="author" content="Pete R.">
+	<link rel="canonical" href="http://www.thepetedesign.com/demos/flipping_gallery_demo.html" />
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,700' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Noto+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+	<link href='./css/flipping_gallery.css' rel='stylesheet' type='text/css'>
+  <link href="css/styles.css" rel="stylesheet" />
+  <link rel="stylesheet" href="css/galeria.css">
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.js"></script>
+  <script type="text/javascript" src="./js/jquery.flipping_gallery.js"></script>
+	<script>
+	  $(document).ready( function() {
+	    $(".gallery").flipping_gallery({
+	      enableScroll: true,
+	      autoplay: 2000
+	    });
+	    
+	    $(".next").click(function() {
+	      $(".gallery").flipForward();
+	      return false;
+	    });
+	    $(".prev").click(function() {
+	      $(".gallery").flipBackward();
+	      return false;
+	    });
+	  });
+    $(document).ready(function(){
+      $("#title").hide().fadeIn(3000).animate({
+        fontSize: "50px",
+        marginLeft: "50px",
+        rotate: "360deg"
+      }, 4000);
+    });
+	</script>
+</head>
+<body>
+   <!-- Navigation-->
+   <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container px-4 px-lg-5">
+        <a class="navbar-brand" href="#!">No Fun Records</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
+                <li class="nav-item"><a class="nav-link" aria-current="page" href="./index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link  active" href="./galeria.html">Galería</a></li>
+                <li class="nav-item"><a class="nav-link" href="./videos.html">Videos</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!-- End AdPacks.com Zone Code -->
+	  <div class="main">
+	    <div class="header">
+        <h1 id="title">Galería Imágenes</h1>
+        <h2>Aquí puedes disfrutar de las mejores imágenes de los artistas que puedes encontrar en la tienda</h2>
+        <p class="credit">Created by <a href="http://www.thepetedesign.com">Juan Pablo y Helena</a>
+  	  </div>
+  	  
+      <div class="page-container">
+      <div class="pointer2">Click Me</div>  
+      <div class="pointer">Scroll Me</div>  
+        <div class="gallery">
+          <a href="#" data-caption="TAYLOR SWIFT - Reputation Stadium World Tour"><img src="../imgs/1.jpg" width="500" height="330"></a>
+          <a href="#" data-caption="GORILLAZ - Song Machine Live"><img src="../imgs/2.jpg"width="500" height="330"></a>
+          <a href="#" data-caption="EUROPE - (2014) La Riviera. Madrid"><img src="../imgs/3.jpg" width="500" height="330"></a>
+          <a href="#" data-caption="U2 - Concierto en el WiZink Center de Madrid"><img src="../imgs/4.jpg" width="500" height="330""></a>
+          <a href="#" data-caption="MARIAH CAREY - Wizink Center de Madrid"><img src="../imgs/5.jpg" width="500" height="330"></a>
+          <a href="#" data-caption="BLACK SABBATH - 19 de mayo 2012 en Birmingham"><img src="../imgs/6.jpg" width="500" height="330"></a>
+          <a href="#" data-caption="BEYONCÉ Y JAY-Z - 11 de julio 2014 en Barcelona"><img src="../imgs/7.jpg" width="500" height="330"></a>
+          <a href="#" data-caption="AXL ROSE Y AC/DC - 2016 Paseo Marítimo de Algés en Lisboa"><img src="../imgs/8.jpg" width="500" height="330"></a>
+          <a href="#" data-caption="TAYLOR SWIFT - Reputation Stadium World Tour"><img src="../imgs/1.jpg" width="500" height="330" ></a>
+          <a href="#" data-caption="GORILLAZ - Song Machine Live"><img src="../imgs/2.jpg" width="500" height="330"></a>
+          <a href="#" data-caption="EUROPE - (2014) La Riviera. Madrid"><img src="../imgs/3.jpg" width="500" height="330"></a>
+          <a href="#" data-caption="U2 - Concierto en el WiZink Center de Madrid"><img src="../imgs/4.jpg" width="500" height="330"></a>
+          <a href="#" data-caption="MARIAH CAREY - Wizink Center de Madrid"><img src="../imgs/5.jpg" width="500" height="330"></a>
+          <a href="#" data-caption="BLACK SABBATH - 19 de mayo 2012 en Birmingham"><img src="../imgs/6.jpg" width="500" height="330"></a>
+          <a href="#" data-caption="BEYONCÉ Y JAY-Z - 11 de julio 2014 en Barcelona"><img src="../imgs/7.jpg" width="500" height="330"></a>
+          <a href="#" data-caption="AXL ROSE Y AC/DC - 2016 Paseo Marítimo de Algés en Lisboa"><img src="../imgs/8.jpg" width="500" height="330"></a>
+        </div>
+        
+
+        <div class="navigation">
+          <a href="#" class="btn prev">Previous</a>
+          <a href="#" class="btn next">Next</a>
+        </div>
+      </div>
+    </div>
+    <footer class="py-5 bg-dark">
+      <div class="container">
+          <p class="m-0 text-center text-white"><a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="Creative Commons Licence" style="border-width:0" src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">NO FUN RECORDS</span> by <span xmlns:cc="http://creativecommons.org/ns#" property="cc:attributionName">Juan Pablo Cabrillana y Helena Rodríguez</span> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">Creative Commons Attribution-NonCommercial 4.0 International License</a>.</p>
+      </div>
+  </footer>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+</script>
+
+</body>
+</html>

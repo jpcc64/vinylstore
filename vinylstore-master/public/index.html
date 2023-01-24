@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>NO FUN RECORDS</title>
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <!-- Bootstrap icons-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      crossorigin="anonymous"
+    ></script>
+    <script src="../src/components/MediaPreview.js"></script>
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/styles.css" rel="stylesheet" />
+    <script>
+      $(document).ready(function () {
+        setInterval(function () {
+          $("#title").fadeOut(1000).fadeIn(1000);
+        }, 2000);
+      });
+    </script>
+    <style>
+      #title {
+        font-size: 36px;
+        font-weight: bold;
+        text-align: center;
+        margin-top: 50px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="media"></div>
+    <!--Nav y Header implementado como componente de react-->
+    <div id="app"></div>
+    <!-- Section-->
+    <section class="py-5">
+      <div class="container px-4 px-lg-5 mt-5">
+        <div
+          class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center"
+        >
+          <div class="col mb-5">
+            <div class="card h-100">
+              <!-- Product image-->
+              <img
+                class="card-img-top"
+                src="../imgs/Midnights_Taylor_Swift.png"
+                alt="..."
+              />
+              <!-- Product details-->
+              <div class="card-body p-4">
+                <div class="text-center">
+                  <!-- Product name-->
+                  <h5 class="fw-bolder">TAYLOR SWIFT</h5>
+                  <h5 class="fw-bolder">MIDNIGHTS</h5>
+                  <!-- Product reviews-->
+                  <div
+                    class="d-flex justify-content-center small text-warning mb-2"
+                  >
+                    <div class="bi-star-fill"></div>
+                    <div class="bi-star-fill"></div>
+                    <div class="bi-star-fill"></div>
+                    <div class="bi-star-fill"></div>
+                    <div class="bi-star-fill"></div>
+                  </div>
+                  <!-- Product price-->
+                  $40.00
+                </div>
+              </div>
+              <!-- Product actions-->
+              <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                <div class="text-center">
+                  <a
+                    class="btn btn-outline-dark mt-auto"
+                    data-toggle="modal"
+                    data-target="#exampleModal"
+                    >Ofertas</a
+                  >
+                  <div
+                    class="modal fade"
+                    id="exampleModal"
+                    tabindex="-1"
+                    role="dialog"
+                    aria-labelledby="exampleModalLabel"
+                    aria-hidden="true"
+                  >
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header bg-info ">
+                          <h5 class="modal-title" id="exampleModalLabel">
+                            Ofertas disponibles
+                          </h5>
+                          <button
+                            type="button"
+                            class="close"
+                            data-dismiss="modal"
+                            aria-label="Close"
+                          >
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                        </div>
+                        <div class="modal-body bg-dark text-white">
+                          ¡¡ REBAJA DEL 20% HASTA FEBRERO DE 2023 !!
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col mb-5">
+            <div class="card h-100">
+              <!-- Sale badge-->
+              <div
+                class="badge bg-dark text-white position-absolute"
+                style="top: 0.5rem; right: 0.5rem"
+              >
+                Sale
+              </div>
+              <!-- Product image-->
+              <img
+                class="card-img-top"
+                src="../imgs/GORILLZ-DEMONDAYS.PNG"
+                alt="..."
+              />
+              <!-- Product details-->
+              <div class="card-body p-4">
+                <div class="text-center">
+                  <!-- Product name-->
+                  <h5 class="fw-bolder">GORILLAZ</h5>
+                  <h5 class="fw-bolder">DEMON DAYS</h5>
+                  <!-- Product reviews-->
+                  <div
+                    class="d-flex justify-content-center small text-warning mb-2"
+                  >
+                    <div class="bi-star-fill"></div>
+                    <div class="bi-star-fill"></div>
+                    <div class="bi-star-fill"></div>
+                    <div class="bi-star-fill"></div>
+                    <div class="bi-star-fill"></div>
+                  </div>
+                  <!-- Product price-->
+                  <span class="text-muted text-decoration-line-through"
+                    >$40.00</span
+                  >
+                  $28.00
+                </div>
+              </div>
+              <!-- Product actions-->
+              <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                <div class="text-center">
+                  <a
+                    class="btn btn-outline-dark mt-auto"
+                    data-toggle="modal"
+                    data-target="#exampleModal"
+                    >Ofertas</a
+                  >
+                  <div
+                    class="modal fade"
+                    id="exampleModal"
+                    tabindex="-1"
+                    role="dialog"
+                    aria-labelledby="exampleModalLabel"
+                    aria-hidden="true"
+                  >
+                    <div class="modal-dialog   modal-dialog-centered fw-bolder">
+                      <div class="modal-content">
+                        <div class="modal-header text-primary">
+                          <h5 class="modal-title" id="exampleModalLabel">
+                            Ofertas disponibles
+                          </h5>
+                          <button
+                            type="button"
+                            class="close"
+                            data-dismiss="modal"
+                            aria-label="Close"
+                          >
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                        </div>
+                        <div class="modal-body">
+                          CON LA COMPRA DE UN VIVILO DE gOZILLA TE REGALAMOS UNA GORRA
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col mb-5">
+            <div class="card h-100">
+              <!-- Sale badge-->
+              <div
+                class="badge bg-dark text-white position-absolute"
+                style="top: 0.5rem; right: 0.5rem"
+              >
+                Sale
+              </div>
+              <!-- Product image-->
+              <img
+                class="card-img-top"
+                src="../imgs/EUROPE-TFC.png"
+                alt="..."
+              />
+              <!-- Product details-->
+              <div class="card-body p-4">
+                <div class="text-center">
+                  <!-- Product name-->
+                  <h5 class="fw-bolder">EUROPE</h5>
+                  <h5 class="fw-bolder">THE FINAL COUNTDOWN</h5>
+                  <!-- Product reviews-->
+                  <div
+                    class="d-flex justify-content-center small text-warning mb-2"
+                  >
+                    <div class="bi-star-fill"></div>
+                    <div class="bi-star-fill"></div>
+                    <div class="bi-star-fill"></div>
+                    <div class="bi-star-fill"></div>
+                  </div>
+                  <!-- Product price-->
+                  <span class="text-muted text-decoration-line-through"
+                    >$50.00</span
+                  >
+                  $25.00
+                </div>
+              </div>
+              <!-- Product actions-->
+              <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                <div class="text-center">
+                  <a
+                    class="btn btn-outline-dark mt-auto"
+                    data-toggle="modal"
+                    data-target="#exampleModal"
+                    >Ofertas</a
+                  >
+                  <div
+                    class="modal fade"
+                    id="exampleModal"
+                    tabindex="-1"
+                    role="dialog"
+                    aria-labelledby="exampleModalLabel"
+                    aria-hidden="true"
+                  >
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header text-primary">
+                          <h5 class="modal-title" id="exampleModalLabel">
+                            Ofertas disponibles
+                          </h5>
+                          <button
+                            type="button"
+                            class="close"
+                            data-dismiss="modal"
+                            aria-label="Close"
+                          >
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                        </div>
+                        <div class="modal-body">
+                          LO SENTIMOS, NO HAY MAS OFERTAS DISPONIBLES EN ESTE ARTÍCULO
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col mb-5">
+            <div class="card h-100">
+              <!-- Product image-->
+              <img class="card-img-top" src="../imgs/u2-gloria.png" alt="..." />
+              <!-- Product details-->
+              <div class="card-body p-4">
+                <div class="text-center">
+                  <!-- Product name-->
+                  <h5 class="fw-bolder">U2</h5>
+                  <h5 class="fw-bolder">GLORIA</h5>
+                  <!-- Product reviews-->
+                  <div
+                    class="d-flex justify-content-center small text-warning mb-2"
+                  >
+                    <div class="bi-star-fill"></div>
+                    <div class="bi-star-fill"></div>
+                    <div class="bi-star-fill"></div>
+                    <div class="bi-star-fill"></div>
+                    <div class="bi-star-fill"></div>
+                  </div>
+                  <!-- Product price-->
+                  $40.00
+                </div>
+              </div>
+              <!-- Product actions-->
+              <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                <div class="text-center">
+                  <a
+                    class="btn btn-outline-dark mt-auto"
+                    data-toggle="modal"
+                    data-target="#exampleModal"
+                    >Ofertas</a
+                  >
+                  <div
+                    class="modal fade"
+                    id="exampleModal"
+                    tabindex="-1"
+                    role="dialog"
+                    aria-labelledby="exampleModalLabel"
+                    aria-hidden="true"
+                  >
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header text-primary">
+                          <h5 class="modal-title" id="exampleModalLabel">
+                            Ofertas disponibles
+                          </h5>
+                          <button
+                            type="button"
+                            class="close"
+                            data-dismiss="modal"
+                            aria-label="Close"
+                          >
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                        </div>
+                        <div class="modal-body">
+                          ¡¡ REBAJA DEL 20% HASTA FEBRERO DE 2023 !!
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col mb-5">
+            <div class="card h-100">
+              <!-- Sale badge-->
+              <div
+                class="badge bg-dark text-white position-absolute"
+                style="top: 0.5rem; right: 0.5rem"
+              >
+                Sale
+              </div>
+              <!-- Product image-->
+              <img
+                class="card-img-top"
+                src="../imgs/mariah-carey-MC.png"
+                alt="..."
+              />
+              <!-- Product details-->
+              <div class="card-body p-4">
+                <div class="text-center">
+                  <!-- Product name-->
+                  <h5 class="fw-bolder">MARIAH CAREY</h5>
+                  <h5 class="fw-bolder">MERRY CHRISTMAS</h5>
+                  <!-- Product price-->
+                  <span class="text-muted text-decoration-line-through"
+                    >$50.00</span
+                  >
+                  $25.00
+                </div>
+              </div>
+              <!-- Product actions-->
+              <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                <div class="text-center">
+                  <a
+                    class="btn btn-outline-dark mt-auto"
+                    data-toggle="modal"
+                    data-target="#exampleModal"
+                    >Ofertas</a
+                  >
+                  <div
+                    class="modal fade"
+                    id="exampleModal"
+                    tabindex="-1"
+                    role="dialog"
+                    aria-labelledby="exampleModalLabel"
+                    aria-hidden="true"
+                  >
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header text-primary">
+                          <h5 class="modal-title" id="exampleModalLabel">
+                            Ofertas disponibles
+                          </h5>
+                          <button
+                            type="button"
+                            class="close"
+                            data-dismiss="modal"
+                            aria-label="Close"
+                          >
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                        </div>
+                        <div class="modal-body">
+                            LO SENTIMOS, NO HAY MAS OFERTAS DISPONIBLES EN ESTE ARTÍCULO
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col mb-5">
+            <div class="card h-100">
+              <!-- Product image-->
+              <img
+                class="card-img-top"
+                src="../imgs/blacksabbath-MOR.png"
+                alt="..."
+              />
+              <!-- Product details-->
+              <div class="card-body p-4">
+                <div class="text-center">
+                  <!-- Product name-->
+                  <h5 class="fw-bolder">BLACK SABBATH</h5>
+                  <h5 class="fw-bolder">MASTER OF REALITY</h5>
+                  <!-- Product price-->
+                  $60.00
+                </div>
+              </div>
+              <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                <div class="text-center">
+                  <a
+                    class="btn btn-outline-dark mt-auto"
+                    data-toggle="modal"
+                    data-target="#exampleModal"
+                    >Ofertas</a
+                  >
+                  <div
+                    class="modal fade"
+                    id="exampleModal"
+                    tabindex="-1"
+                    role="dialog"
+                    aria-labelledby="exampleModalLabel"
+                    aria-hidden="true"
+                  >
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header text-primary">
+                          <h5 class="modal-title" id="exampleModalLabel">
+                            Ofertas disponibles
+                          </h5>
+                          <button
+                            type="button"
+                            class="close"
+                            data-dismiss="modal"
+                            aria-label="Close"
+                          >
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                        </div>
+                        <div class="modal-body">
+                          ¡¡ REBAJA DEL 20% HASTA FEBRERO DE 2023 !!
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col mb-5">
+            <div class="card h-100">
+              <!-- Sale badge-->
+              <div
+                class="badge bg-dark text-white position-absolute"
+                style="top: 0.5rem; right: 0.5rem"
+              >
+                Sale
+              </div>
+              <!-- Product image-->
+              <img
+                class="card-img-top"
+                src="../imgs/beyonce-renaissence.png"
+                alt="..."
+              />
+              <!-- Product details-->
+              <div class="card-body p-4">
+                <div class="text-center">
+                  <!-- Product name-->
+                  <h5 class="fw-bolder">BEYONCÉ</h5>
+                  <h5 class="fw-bolder">RENAISSANCE</h5>
+                  <!-- Product reviews-->
+                  <div
+                    class="d-flex justify-content-center small text-warning mb-2"
+                  >
+                    <div class="bi-star-fill"></div>
+                    <div class="bi-star-fill"></div>
+                    <div class="bi-star-fill"></div>
+                    <div class="bi-star-fill"></div>
+                    <div class="bi-star-fill"></div>
+                  </div>
+                  <!-- Product price-->
+                  <span class="text-muted text-decoration-line-through"
+                    >$30.00</span
+                  >
+                  $18.00
+                </div>
+              </div>
+              <!-- Product actions-->
+              <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                <div class="text-center">
+                  <a
+                    class="btn btn-outline-dark mt-auto"
+                    data-toggle="modal"
+                    data-target="#exampleModal"
+                    >Ofertas</a
+                  >
+                  <div
+                    class="modal fade"
+                    id="exampleModal"
+                    tabindex="-1"
+                    role="dialog"
+                    aria-labelledby="exampleModalLabel"
+                    aria-hidden="true"
+                  >
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header text-primary">
+                          <h5 class="modal-title" id="exampleModalLabel">
+                            Ofertas disponibles
+                          </h5>
+                          <button
+                            type="button"
+                            class="close"
+                            data-dismiss="modal"
+                            aria-label="Close"
+                          >
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                        </div>
+                        <div class="modal-body">
+                            LO SENTIMOS, NO HAY MAS OFERTAS DISPONIBLES EN ESTE ARTÍCULO
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col mb-5">
+            <div class="card h-100">
+              <!-- Product image-->
+              <img
+                class="card-img-top"
+                src="../imgs/acdc-powerup.png"
+                alt="..."
+              />
+              <!-- Product details-->
+              <div class="card-body p-4">
+                <div class="text-center">
+                  <!-- Product name-->
+                  <h5 class="fw-bolder">AC/DC</h5>
+                  <h5 class="fw-bolder">POWER UP</h5>
+                  <!-- Product reviews-->
+                  <div
+                    class="d-flex justify-content-center small text-warning mb-2"
+                  >
+                    <div class="bi-star-fill"></div>
+                    <div class="bi-star-fill"></div>
+                    <div class="bi-star-fill"></div>
+                    <div class="bi-star-fill"></div>
+                    <div class="bi-star-fill"></div>
+                  </div>
+                  <!-- Product price-->
+                  $40.00
+                </div>
+              </div>
+              <!-- Product actions-->
+              <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                <div class="text-center">
+                  <a
+                    class="btn btn-outline-dark mt-auto"
+                    data-toggle="modal"
+                    data-target="#exampleModal"
+                    >Ofertas</a
+                  >
+                  <div
+                    class="modal fade"
+                    id="exampleModal"
+                    tabindex="-1"
+                    role="dialog"
+                    aria-labelledby="exampleModalLabel"
+                    aria-hidden="true"
+                  >
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header text-primary">
+                          <h5 class="modal-title" id="exampleModalLabel">
+                            Ofertas disponibles
+                          </h5>
+                          <button
+                            type="button"
+                            class="close"
+                            data-dismiss="modal"
+                            aria-label="Close"
+                          >
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                        </div>
+                        <div class="modal-body">
+                          ¡¡ REBAJA DEL 20% HASTA FEBRERO DE 2023 !!
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Footer-->
+    <footer class="py-5 bg-dark">
+      <div class="container">
+        <p class="m-0 text-center text-white">
+          <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"
+            ><img
+              alt="Creative Commons Licence"
+              style="border-width: 0"
+              src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png" /></a
+          ><br /><span
+            xmlns:dct="http://purl.org/dc/terms/"
+            property="dct:title"
+            >NO FUN RECORDS</span
+          >
+          by
+          <span
+            xmlns:cc="http://creativecommons.org/ns#"
+            property="cc:attributionName"
+            >Juan Pablo Cabrillana y Helena Rodríguez</span
+          >
+          is licensed under a
+          <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"
+            >Creative Commons Attribution-NonCommercial 4.0 International
+            License</a
+          >.
+        </p>
+      </div>
+    </footer>
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="js/scripts.js"></script>
+  </body>
+</html>

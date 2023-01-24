@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NO FUN RECORDS</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.5/jquery.bxslider.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.5/jquery.bxslider.css">
+    <link href="css/styles.css" rel="stylesheet" />
+  <style>
+    body{
+        background: url(../imgs/background.png);
+      padding: 0;
+      text-align: center;
+      font-family: 'open sans';
+      position: relative;
+      margin: 0;
+      height: 100%;
+}
+h1{
+  color:#eee4fa;
+  text-align: center;
+}
+.bx-wrapper{max-width: 800px!important} /*ponemos el ancho de nuestras imágenes por defecto está al 100% */
+#container{
+    margin: 20px;
+    height: 700px;
+}
+#title {
+      font-size: 36px;
+      font-weight: bold;
+      text-align: center;
+      margin-top:50px;
+    }
+  </style>
+   <script>
+    $(document).ready(function(){
+      $("#title").hide().fadeIn(3000).animate({
+        fontSize: "50px",
+        color: "#ff0000",
+        scale: 1.5
+      }, 4000);
+    });
+  </script>
+    </head>  
+  <body>
+    <!-- Navigation-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container px-4 px-lg-5">
+            <a class="navbar-brand" href="#!">No Fun Records</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
+                    <li class="nav-item"><a class="nav-link" aria-current="page" href="./index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./galeria.html">Galería</a></li>
+                    <li class="nav-item"><a class="nav-link  active" href="./videos.html">Videos</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div id="container"  class="mt-5">
+        <div id="galeria" class="mt-5">
+            <h1 id="title" class="mb-5">GALERÍA DE VIDEOS</h1>
+            <ul class="bxslider mt-5">
+                <li><iframe width="100%" height="415" src="https://www.youtube.com/embed/b1kbLwvqugk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></li>
+                <li><iframe width="100%" height="415" src="https://www.youtube.com/embed/HyHNuVaZJ-k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></li>
+                <li><iframe width="100%" height="415" src="https://www.youtube.com/embed/9jK-NcRmVcw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></li>
+                <li><iframe width="100%" height="415" src="https://www.youtube.com/embed/ujNeHIo7oTE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></li>
+                <li><iframe width="100%" height="415" src="https://www.youtube.com/embed/aAkMkVFwAoo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></li>
+                <li><iframe width="100%" height="415" src="https://www.youtube.com/embed/0qanF-91aJo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></li>
+                <li><iframe width="100%" height="415" src="https://www.youtube.com/embed/09z3qcegpHU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></li>
+            </ul>
+        </div>
+    </div>
+   
+  <footer class="py-5 bg-dark">
+    <div class="container">
+        <p class="m-0 text-center text-white"><a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="Creative Commons Licence" style="border-width:0" src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">NO FUN RECORDS</span> by <span xmlns:cc="http://creativecommons.org/ns#" property="cc:attributionName">Juan Pablo Cabrillana y Helena Rodríguez</span> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">Creative Commons Attribution-NonCommercial 4.0 International License</a>.</p>
+    </div>
+</footer>
+  <script>
+    $(document).ready(function(){
+  $('.bxslider').bxSlider();
+});
+  </script>
+  </body>
+  </html>
+  
