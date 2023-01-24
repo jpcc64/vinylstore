@@ -3,10 +3,10 @@ import { render } from "react-dom";
 import PreviewModal from "react-media-previewer";
 import "../../public/css/styles.css";
 
-function App() {
+function MediaView() {
   const [visible, setVisible] = useState(false);
   return (
-    <div className="App">
+    <div className="MediaView">
       <h1>Hello CodeSandbox</h1>
       <h2>Start editing to see some magic happen!</h2>
       <div>
@@ -26,4 +26,4 @@ function App() {
   );
 }
 
-render(<App />, document.getElementById("media"));
+render(<MediaView />, document.getElementById("media"));
